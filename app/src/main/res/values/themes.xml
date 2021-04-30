@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyCollapsingToolbar" parent="Theme.Design.NoActionBar">
+        <!-- Primary brand color. -->
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/transparent</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="CustomTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="Theme.Toolbar1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <item name="colorPrimary">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.MyCollapsingToolbarNew" parent="Theme.Design.NoActionBar">
+        <!-- Primary brand color. -->
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/transparent</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/transparent</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+    </style>
+
+    <style name="AppBarLayoutTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorAccent">@color/transparent</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+</resources>
