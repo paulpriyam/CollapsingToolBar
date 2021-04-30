@@ -10,4 +10,10 @@ Kata dokter, bola mata sebelah kiri masih memiliki harapan untuk bisa melihat,Se
 jika diberi cahaya dengan menggunakan senter Bapak bisa mengetahui dari mana arah datangnya cahaya. Tapi hanya cahaya putih, untuk cahaya biru dan merah belum bisa sama sekali,” ujar Nanik Yuliati, istri Djoko.</string>
     <string name="bottom_sheet_text">In Bangladesh, however, the old Bengali calendar was modified in 1966 by a committee headed by Muhammad Shahidullah, making the first five months 31 days long, the rest 30 days each, with the month of Falgun adjusted to 31 days in every leap year.[3] This was officially adopted by Bangladesh in 1987.[3][4] The old Bengali calendar was modified again after 2018 by Bangladesh Govt. The new changes to match national days with West. Now the first six months will be with 31 days, Falgun 29 days (30 days in leap year), and the rest five months will have 30 days in line with the revised calendar.</string>
     <string name="bottom_sheet">Bottom sheet</string>
+
+    <string-array name="tab_string_list">
+        <item>Completed</item>
+        <item>Pending</item>
+        <item>Canceled</item>
+    </string-array>
 </resources>
