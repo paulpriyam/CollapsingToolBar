@@ -1,4 +1,4 @@
-package com.example.mycollapsingtoolbar
+package com.example.mycollapsingtoolbar.activity
 
 import android.graphics.BitmapFactory
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.palette.graphics.Palette
+import com.example.mycollapsingtoolbar.R
 import com.example.mycollapsingtoolbar.adapter.ViewPagerAdapter
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.activity_collapsing_tool_bar_4.*
@@ -19,7 +20,7 @@ class CollapsingToolBar4 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_collapsing_tool_bar_4)
-        mViewPagerAdapter = ViewPagerAdapter(this)
+        mViewPagerAdapter = ViewPagerAdapter(this, false)
         initToolbar()
         initViewPager()
         setActionToolBarColor()

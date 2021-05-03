@@ -1,7 +1,8 @@
-package com.example.mycollapsingtoolbar
+package com.example.mycollapsingtoolbar.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.mycollapsingtoolbar.R
 import com.google.android.material.appbar.AppBarLayout
 import kotlinx.android.synthetic.main.activity_collapsing_tool_bar2.*
 

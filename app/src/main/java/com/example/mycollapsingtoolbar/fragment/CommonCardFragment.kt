@@ -4,22 +4,21 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.mycollapsingtoolbar.R
-import kotlinx.android.synthetic.main.fragment_common.*
+import kotlinx.android.synthetic.main.fragment_card_common.*
 
-class CommonFragment : Fragment() {
+class CommonCardFragment : Fragment() {
 
     private var intColor: Int? = null
 
     companion object {
-        fun newInstance(color: Int): CommonFragment {
-            val commonFragment = CommonFragment()
+        fun newInstance(color: Int): CommonCardFragment {
+            val mCommonCardFragment = CommonCardFragment()
             val bundle = Bundle()
             bundle.putInt("COLOR", color)
-            commonFragment.arguments = bundle
-            return commonFragment
+            mCommonCardFragment.arguments = bundle
+            return mCommonCardFragment
         }
     }
 
@@ -34,24 +33,18 @@ class CommonFragment : Fragment() {
         }
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        intColor?.let {
+            cv_card.setBackgroundColor(resources.getColor(it))
+        }
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_common, container, false)
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        intColor?.let {
-            cl_common_fragment.setBackgroundColor(
-                ContextCompat.getColor(
-                    cl_common_fragment.context,
-                    it
-                )
-            )
-        }
-
+        return inflater.inflate(R.layout.fragment_card_common, container, false)
     }
 }
